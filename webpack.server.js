@@ -17,14 +17,8 @@ module.exports = {
         rules: [
             { test: /\.css$/, use: 'css-loader' },
             {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env', '@babel/preset-react']
-                    }
-                }
+                test: /\.js$/,
+                use: 'babel-loader'
             },
             {
                 test: /\.svg$/,
@@ -37,19 +31,6 @@ module.exports = {
                     },
                 ],
             }
-        ],
+        ]
     }
-
-    // module: {
-    //     rules: [
-    //         {
-    //             test: /\.js$/,
-    //             use: [
-    //                 { loader: 'babel-loader' },
-    //                 { loader: 'style-loader' },
-    //                 { loader: 'css-loader' }
-    //             ],
-    //         }
-    //     ]
-    // }
 };
