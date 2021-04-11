@@ -11,10 +11,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
-                <MenuContainer>Here</MenuContainer>
-                <h1>Hello Venya</h1>
-            </div>
+            "<div> <MenuContainer>Here</MenuContainer> <h1>Hello Venya</h1> </div>"
         );
     }
 }

@@ -6,7 +6,7 @@ class MenuContainer extends React.Component {
     }
 
     render () {
-        return (<div id='main'>Menu container</div>);
+        return ("<div id='main'>Menu container</div>");
     }
 }
 export default MenuContainer;
